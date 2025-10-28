@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak dan Saran Buku Perpustakaan</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFE4C4;
+            color: #5D4037;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: 80px auto;
+            padding: 30px;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 10px rgba(93, 64, 55, 0.15);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #5D4037;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #A1887F; 
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        h2 {
+            color: #5D4037;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .slogan {
+            font-size: 1.2em;
+            color: #8D6E63;
+            margin-bottom: 40px;
+        }
+
+        .contact-info {
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #D7CCC8;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        
+        .form-section {
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #D7CCC8;
+            border-radius: 8px;
+            margin: 30px auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #5D4037;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #BCAAA4;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        button {
+            background-color: #A1887F;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #8D6E63;
+        }
+
+        .divider {
+            margin: 50px 0;
+            border: none;
+            border-top: 1px dashed #D7CCC8;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px dashed #ecf0f1;
+            font-size: 0.9em;
+            color: #BCAAA4;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>HUBUNGI KAMI</h1>
+            <p class="slogan">Kami senang mendengar dari Anda.</p>
+        </header>
+        
+        <h2>Informasi Perpustakaan</h2>
+        <section class="contact-info">
+            <p><strong>Alamat Fisik:</strong> Jl. Matraman Jaya</p>
+            <p><strong>Nomor Telepon:</strong> (021) 1234-5678 (Layanan Informasi)</p>
+            <p><strong>Alamat Email:</strong> info@perpustakaandigital.id</p>
+            <p><strong>Jam Operasional:</strong> Senin - Sabtu, Pukul 09:00 - 20:00 WIB</p>
+        </section>
+
+        <hr class="divider">
+
+        <section class="form-section">
+            <h2>Kirim Pertanyaan Umum</h2>
+            <form action="#" method="POST">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required>
+                
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subjek">Subjek Pesan</label>
+                <input type="text" id="subjek" name="subjek">
+                
+                <label for="pesan">Isi Pesan Anda</label>
+                <textarea id="pesan" name="pesan" required></textarea>
+                
+                <button type="submit">Kirim Pertanyaan</button>
+            </form>
+        </section>
+
+        <hr class="divider">
+
+        <section class="form-section">
+            <h2>Saran Penambahan Koleksi</h2>
+            <p>Bantu kami memperkaya perpustakaan! Isi formulir di bawah ini jika Anda memiliki rekomendasi buku atau genre baru.</p>
+            <form action="#" method="POST">
+                <label for="judul">Judul Buku yang Disarankan</label>
+                <input type="text" id="judul" name="judul" placeholder="Contoh: No Longer Human">
+
+                <label for="penulis">Penulis (jika tahu)</label>
+                <input type="text" id="penulis" name="penulis" placeholder="Contoh: Osamu Dazai">
+
+                <label for="genre_saran">Saran Genre/Kategori</label>
+                <input type="text" id="genre_saran" name="genre_saran" placeholder="Contoh: Fiksi Historis, Sains Populer">
+                
+                <label for="alasan">Alasan Saran</label>
+                <textarea id="alasan" name="alasan" placeholder="Mengapa buku/genre ini penting untuk perpustakaan?"></textarea>
+                
+                <button type="submit">Ajukan Saran</button>
+            </form>
+        </section>
+        
+        <footer class="footer">
+            &copy; 2024 Perpustakaan Sederhana.
+        </footer>       
+    </div>
+</body>
+</html>

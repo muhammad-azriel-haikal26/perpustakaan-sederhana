@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px 10px;
+        }
+
+        .menu-header {
+            color: #c41e3a;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menuu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menuu ul li {
+            margin-bottom: 10px;
+        }
+
+        .menuu ul li a {
+            display: block;
+            color: #1a1a1a;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 15px 20px;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            border-left: 5px solid #c41e3a;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menuu ul li a:hover {
+            background: rgba(255, 255, 255, 0.95);
+            transform: translateX(10px);
+            border-left: 5px solid #ff1744;
+            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+            text-decoration: none;
+        }
+
+        .menuu ul li a:active {
+            transform: translateX(8px);
+        }
+
+        /* Icon untuk setiap menu */
+        .menuu ul li:nth-child(1) a::before {
+            content: "🏠";
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .menuu ul li:nth-child(2) a::before {
+            content: "📚";
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .menuu ul li:nth-child(3) a::before {
+            content: "📞";
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .menuu ul li:nth-child(4) a::before {
+            content: "📝";
+            margin-right: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-header">
+        Menu Perpustakaan
+    </div>
+    
+    <div class="container">
+        <div class="menuu">
+            <ul>
+                <li><a href="beranda.html" target="frameBeranda">Beranda</a></li>
+                <li><a href="buku.html" target="frameBeranda">Buku</a></li>
+                <li><a href="kontak.html" target="frameBeranda">Kontak</a></li>
+                <li><a href="pendaftaran.html" target="frameBeranda">Pendaftaran</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

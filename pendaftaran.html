@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Anggota Perpustakaan</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFE4C4;
+            color: #5D4037;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 650px;
+            margin: 80px auto;
+            padding: 30px;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 10px rgba(93, 64, 55, 0.15);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #5D4037;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #A1887F; 
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        .slogan {
+            font-size: 1.1em;
+            color: #8D6E63;
+            margin-bottom: 30px;
+        }
+
+        .form-section {
+            text-align: left;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #5D4037;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #BCAAA4;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        
+        button {
+            background-color: #A1887F;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 30px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        
+        button:hover {
+            background-color: #8D6E63;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px dashed #ecf0f1;
+            font-size: 0.9em;
+            color: #BCAAA4;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>PENDAFTARAN ANGGOTA</h1>
+            <p class="slogan">Isi data diri Anda untuk menjadi bagian dari komunitas pembaca kami.</p>
+        </header>
+        
+        <section class="form-section">
+            <form action="#" method="POST">
+                
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required>
+                
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Kata Sandi (Password)</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="telepon">Nomor Telepon</label>
+                <input type="tel" id="telepon" name="telepon">
+                
+                <label for="alamat">Alamat Tinggal</label>
+                <input type="text" id="alamat" name="alamat" required>
+                
+                <label for="pekerjaan">Pekerjaan/Status</label>
+                <select id="pekerjaan" name="pekerjaan">
+                    <option value="mahasiswa">Pelajar/Mahasiswa</option>
+                    <option value="umum">Umum</option>
+                    <option value="lain">Lainnya</option>
+                </select>
+                
+                <button type="submit">Daftar Sekarang</button>
+            </form>
+        </section>
+        
+        <footer class="footer">
+            &copy; 2025 Perpustakaan Sederhana Muhammad Azriel Haikal.
+        </footer>       
+    </div>
+
+</body>
+</html>
